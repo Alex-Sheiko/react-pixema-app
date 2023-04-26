@@ -73,4 +73,4 @@ const SP9 = css`
   margin: 0 0 8px 0;
 `;
 
-export const typography = { SP1, SP2, SP3, SP4, SP5, SP6, SP7, SP8, SP9 };
+export const Spaces = { SP1, SP2, SP3, SP4, SP5, SP6, SP7, SP8, SP9 };
