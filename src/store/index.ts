@@ -1,4 +1,5 @@
 export * from "./store";
+export * from "./hooks/hooks";
 export * from "./features/userSlice";
 export * from "./features/themeSlice";
 export * from "./features/trendsSlice";
