@@ -225,11 +225,4 @@ export const Reset = css`
     width: auto;
     overflow: visible;
   }
-
-  body {
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    color: #000000;
-    margin: 0;
-  }
 `;

@@ -9,6 +9,6 @@ export const StyledSideBar = styled.aside`
 
 export const Copyright = styled.p`
   ${Typography.B1};
-  color: ${Color.Light};
+  color: ${Color.LIGHT};
   align-self: center;
 `;
