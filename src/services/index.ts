@@ -1,4 +1,3 @@
-import { transformMovies } from "./mappers/transformMovies";
-import { transformMovieInfo } from "./mappers/transformMovieInfo";
-
-export { transformMovies, transformMovieInfo };
+export * from "./mappers/transformMovies";
+export * from "./mappers/transformMovieInfo";
+export * from "./firebase/restMoviesAPI";

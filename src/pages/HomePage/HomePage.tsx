@@ -8,7 +8,7 @@ export const HomePage = () => {
   const [page, setPage] = useState<number>(1);
   const handleShowMore = () => setPage((prevPage) => ++prevPage);
   useEffect(() => {
-    dispatch(fetchHomeMovies({ name: "batman", type: "movie", page }));
+    dispatch(fetchHomeMovies({ name: "Star Wars", type: "movie", page }));
   }, [dispatch, page]);
   return (
     <>
