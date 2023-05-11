@@ -7,3 +7,5 @@ export * from "./MainLayout/MainLayout";
 export * from "./Search/Search";
 export * from "./Portal/Portal";
 export * from "./Title/Title";
+export * from "./MenuNav/MenuNav";
+export * from "./MenuLink/MenuLink";
