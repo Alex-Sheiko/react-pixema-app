@@ -14,7 +14,7 @@ export const HomePage = () => {
     <>
       <MovieList movies={movies} isLoading={isLoading} error={error} />
       {!isLoading && !!movies.length && (
-        <Button text="Show more" type="button" variant="secondary" onClick={handleShowMore} />
+        <Button text="Show more" type="button" option="secondary" onClick={handleShowMore} />
       )}
     </>
   );
