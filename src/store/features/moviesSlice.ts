@@ -1,5 +1,19 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { Movie } from "types";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { AxiosError } from "axios";
+import { Movie, MovieSearchAPI, RequestOption } from "types";
+
+export const fetchHomeMovies = createAsyncThunk<
+  MovieSearchAPI | undefined,
+  RequestOption,
+  { rejectValue: string }
+>("movies/fetchHomeMovies", async (options, { rejectWithValue }) => {
+  try {
+    return await moviesApi.getSearchMovies(options);
+  } catch (error) {
+    const errorResponse = error as AxiosError;
+    return rejectWithValue(errorResponse.message);
+  }
+});
 
 interface MoviesState {
   movies: Movie[];
