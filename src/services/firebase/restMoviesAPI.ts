@@ -2,6 +2,9 @@ import axios from "axios";
 import { MovieSearchAPI, MovieInfoAPI, RequestOption } from "types";
 
 class restMoviesAPI {
+  getPopularMovies(page: number) {
+    throw new Error("Method not implemented.");
+  }
   private readonly urlAPI = process.env.REACT_APP_API_URL;
   private readonly keyAPI = process.env.REACT_APP_API_KEY;
   private readonly API = axios.create({
