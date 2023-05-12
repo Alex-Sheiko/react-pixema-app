@@ -39,7 +39,7 @@ const trendsSlice = createSlice({
     builder.addCase(fetchTrends.fulfilled, (state, { payload }) => {
       state.isLoading = false;
       state.error = null;
-      state.trends = transformMovies(payload.Search);
+      state.trends = state.trends.concat(transformMovies(payload.Search));
     });
     builder.addCase(fetchTrends.rejected, (state, { payload }) => {
       if (payload) {
