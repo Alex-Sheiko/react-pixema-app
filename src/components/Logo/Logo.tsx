@@ -8,7 +8,7 @@ export const Logo = () => {
   const { theme } = useAppSelector(getTheme);
   return (
     <RouterLink to={ROUTE.HOME}>
-      <StyledLogo src={theme === "dark" ? logoLight : logoDark} alt="Pixema" />
+      <StyledLogo src={theme === "dark" ? logoDark : logoLight} alt="Pixema" />
     </RouterLink>
   );
 };
