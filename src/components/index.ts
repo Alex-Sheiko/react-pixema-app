@@ -11,3 +11,4 @@ export * from "./MenuNav/MenuNav";
 export * from "./MenuLink/MenuLink";
 export * from "./MovieCard/MovieCard";
 export * from "./MovieList/MovieList";
+export * from "./Header/Header";

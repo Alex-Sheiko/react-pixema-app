@@ -3,7 +3,7 @@ import { useWindowSize } from "hooks";
 import { Outlet } from "react-router-dom";
 import { getUser, useAppSelector } from "store";
 import { Content, StyledMainLayout } from "./styles";
-import { SideBar, Spinner } from "components";
+import { Header, SideBar, Spinner } from "components";
 
 export const MainLayout = () => {
   const { isLoading } = useAppSelector(getUser);
@@ -19,6 +19,7 @@ export const MainLayout = () => {
       >
         {width && width >= 1281 && <SideBar />}
         <Content>
+          <Header />
           <Outlet />
         </Content>
       </StyledMainLayout>
