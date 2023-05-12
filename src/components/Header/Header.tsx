@@ -1,4 +1,4 @@
-import { Search } from "components";
+import { Logo, Search } from "components";
 import { useInput, useToggle } from "hooks";
 import { StyledHeader } from "./styles";
 
@@ -8,6 +8,7 @@ export const Header = () => {
 
   return (
     <StyledHeader>
+      <Logo />
       <Search {...search} onClick={toogleFilter} />
     </StyledHeader>
   );
