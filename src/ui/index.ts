@@ -1,10 +1,8 @@
-import { Media } from "./media";
-import { Color } from "./colors";
-import { Spaces } from "./spaces";
-import { Input } from "./input";
-import { Typography } from "./typography";
-import { GlobalStyles } from "./globalStyles";
-import { darkTheme, lightTheme } from "./theme";
-import { Reset } from "./reset";
-
-export { Reset, Media, Color, Input, lightTheme, darkTheme, Typography, Spaces, GlobalStyles };
+export * from "./media";
+export * from "./colors";
+export * from "./globalStyles";
+export * from "./spaces";
+export * from "./input";
+export * from "./typography";
+export * from "./theme";
+export * from "./reset";
