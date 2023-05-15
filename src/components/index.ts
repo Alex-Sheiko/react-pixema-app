@@ -16,4 +16,5 @@ export * from "./SwitchButton/SwitchButton";
 export * from "./BurgerMenu/BurgerMenu";
 export * from "./AuthTemplate/AuthTemplate";
 export * from "./Label/Label";
+export * from "./CustomSelect/CustomSelect";
 export * from "./MenuFilter/MenuFilter";

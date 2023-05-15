@@ -10,7 +10,7 @@ import {
   SelectOption,
   Label,
   MovieType,
-  MovieTypeSelect,
+  CustomSelect,
   Portal,
   Title,
   PortalTarget,
@@ -102,7 +102,7 @@ export const FilterMenu = ({ toogleFilter }: IProps) => {
                 rules={{ required: true }}
                 control={control}
                 render={({ field: { onChange, value } }) => (
-                  <MovieTypeSelect
+                  <CustomSelect
                     options={options}
                     value={options.find((option) => option.value === value?.value)}
                     defaultValue={options[0]}
