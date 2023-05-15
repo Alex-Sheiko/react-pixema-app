@@ -42,9 +42,14 @@ export const FilterHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  path {
-    fill: ${Color.LIGHT};
+  svg {
     cursor: pointer;
+    &:hover {
+      path {
+        fill: ${Color.PRIMARY};
+        transition: all 0.3s ease-in-out;
+      }
+    }
   }
 `;
 

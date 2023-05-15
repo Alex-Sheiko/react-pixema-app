@@ -1,7 +1,6 @@
 import { Background, FilterHeader, Filters, GroupButton, StyledFilterMenu } from "./styles";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
-import { generatePath, useNavigate } from "react-router";
-import { createSearchParams } from "react-router-dom";
+import { generatePath, useNavigate, createSearchParams } from "react-router-dom";
 import { CrossIcon } from "assets";
 import { Input, InputGroup } from "ui";
 import { ROUTE } from "router";
@@ -48,7 +47,7 @@ export const FilterMenu = ({ toogleFilter }: Props) => {
     const { year, title, movieType } = filterData;
     toogleFilter();
     navigate(
-      `${generatePath(ROUTE.SEARCH, { title })}?${createSearchParams({
+      `${generatePath(ROUTE.SEARCH, { name: title })}?${createSearchParams({
         year,
         type: movieType.value,
       })}`,

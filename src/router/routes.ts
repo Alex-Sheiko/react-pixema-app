@@ -7,5 +7,5 @@ export enum ROUTE {
   REGISTRATION = "registration",
   MOVIE = "movie/:id",
   RESET = "password/reset",
-  SEARCH = "search/:title",
+  SEARCH = "search/:name",
 }
