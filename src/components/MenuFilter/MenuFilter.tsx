@@ -16,7 +16,7 @@ import {
   PortalTarget,
 } from "components";
 
-interface IProps {
+interface Props {
   toogleFilter: () => void;
 }
 interface FilterFormProps {
@@ -31,7 +31,7 @@ const options = [
   { value: MovieType.EPISODE, label: "Episode" },
 ];
 
-export const FilterMenu = ({ toogleFilter }: IProps) => {
+export const FilterMenu = ({ toogleFilter }: Props) => {
   const {
     register,
     handleSubmit,
@@ -48,7 +48,7 @@ export const FilterMenu = ({ toogleFilter }: IProps) => {
     const { year, title, movieType } = filterData;
     toogleFilter();
     navigate(
-      `${generatePath(ROUTE.SEARCH, { name: title })}?${createSearchParams({
+      `${generatePath(ROUTE.SEARCH, { title })}?${createSearchParams({
         year,
         type: movieType.value,
       })}`,
