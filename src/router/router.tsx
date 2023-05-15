@@ -1,5 +1,5 @@
 import { ROUTE } from "router";
-import { MainLayout } from "components";
+import { MainTemplate } from "components";
 import { Route, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 
 import {
@@ -18,7 +18,7 @@ import {
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path={ROUTE.HOME} errorElement={<ErrorPage />}>
-      <Route element={<MainLayout />}>
+      <Route element={<MainTemplate />}>
         <Route index path={ROUTE.HOME} element={<HomePage />} />
         <Route path={ROUTE.TRENDS} element={<TrendsPage />} />
         <Route path={ROUTE.MOVIE} element={<DetailsPage />} />
