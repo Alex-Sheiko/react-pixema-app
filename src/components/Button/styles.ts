@@ -7,7 +7,8 @@ interface ButtonProps {
 }
 
 export const StyledButton = styled.button`
-  border-radius: 10px;
+  align-self: center;
+  border-radius: 40px;
   border: none;
   padding: 15px 60px 15px;
   background-color: ${(props: ButtonProps) =>
