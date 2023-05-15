@@ -19,7 +19,6 @@ export const Header = () => {
 
   return (
     <StyledHeader>
-      <Logo />
       <Search {...search} onClick={toogleFilter} />
       <BurgerMenu />
       <AnimatePresence>{isActive && <FilterMenu toogleFilter={toogleFilter} />}</AnimatePresence>
