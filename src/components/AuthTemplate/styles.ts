@@ -12,10 +12,10 @@ export const StyledAuthTemplate = styled(motion.div)`
   padding: 48px 62px 20px;
   background: url(${bgAuth}) center no-repeat;
   background-size: cover;
-  ${Media.Md} {
+  ${Media.MD} {
     padding: 47px 40px 20px;
   }
-  ${Media.Sm} {
+  ${Media.SM} {
     padding: 32px 24px 48px;
     grid-template-rows: 40px 1fr 24px;
     grid-row-gap: 48px;
@@ -31,7 +31,7 @@ export const StyledAuthTemplate = styled(motion.div)`
 export const Image = styled.img`
   width: 158px;
   height: 40px;
-  ${Media.Sm} {
+  ${Media.SM} {
     width: 147px;
     height: 38px;
   }
@@ -45,10 +45,10 @@ export const Copyright = styled.p`
 export const Content = styled.div`
   justify-self: center;
   min-width: 574px;
-  ${Media.Md} {
+  ${Media.MD} {
     min-width: 400px;
   }
-  ${Media.Sm} {
+  ${Media.SM} {
     min-width: 274px;
   }
 `;

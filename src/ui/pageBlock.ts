@@ -10,10 +10,10 @@ export const PageBlock = styled.div`
     margin-top: 64px;
     padding: 8px 24px;
     border-radius: 40px;
-    ${Media.Md} {
+    ${Media.MD} {
       margin-top: 56px;
     }
-    ${Media.Sm} {
+    ${Media.SM} {
       margin-top: 48px;
     }
   }

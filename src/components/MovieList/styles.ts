@@ -6,10 +6,10 @@ export const StyledMovieList = styled(motion.ul)`
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  ${Media.Lg} {
+  ${Media.LG} {
     gap: 32px;
   }
-  ${Media.Sm} {
+  ${Media.SM} {
     gap: 32px 0;
     justify-content: center;
   }

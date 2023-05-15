@@ -24,12 +24,12 @@ export const StyledBurgerMenu = styled.div`
   min-height: 100vh;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  ${Media.Md} {
+  ${Media.MD} {
     grid-template-columns: 2fr 1.5fr;
     width: 100%;
     height: 100%;
   }
-  ${Media.Sm} {
+  ${Media.SM} {
     grid-template-columns: 0 1fr;
   }
 `;

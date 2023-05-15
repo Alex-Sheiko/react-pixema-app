@@ -36,7 +36,7 @@ export const InputGroup = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
-  ${Media.Sm} {
+  ${Media.SM} {
     gap: 20px;
   }
 `;

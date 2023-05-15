@@ -9,13 +9,13 @@ export const StyledMainTemplate = styled(motion.div)`
   grid-template-columns: 160px 1fr;
   gap: 146px;
 
-  ${Media.Lg} {
+  ${Media.LG} {
     height: 100%;
     padding: 40px 60px;
     grid-template-columns: 1fr;
   }
 
-  ${Media.Sm} {
+  ${Media.SM} {
     padding: 15px;
     margin: 0 auto;
   }
