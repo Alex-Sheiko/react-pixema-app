@@ -1,4 +1,4 @@
-import { BurgerMenu, FilterMenu, Logo, Search } from "components";
+import { BurgerMenu, FilterMenu, Search } from "components";
 import { useDebounce, useInput, useToggle } from "hooks";
 import { StyledHeader } from "./styles";
 import { AnimatePresence } from "framer-motion";
