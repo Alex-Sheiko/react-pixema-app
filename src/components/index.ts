@@ -14,3 +14,4 @@ export * from "./MovieList/MovieList";
 export * from "./Header/Header";
 export * from "./SwitchButton/SwitchButton";
 export * from "./BurgerMenu/BurgerMenu";
+export * from "./AuthTemplate/AuthTemplate";

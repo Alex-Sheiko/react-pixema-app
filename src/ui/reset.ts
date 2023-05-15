@@ -131,6 +131,7 @@ export const Reset = css`
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+    text-decoration: none;
   }
 
   del {

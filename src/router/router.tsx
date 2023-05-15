@@ -1,5 +1,5 @@
 import { ROUTE } from "router";
-import { MainTemplate } from "components";
+import { MainTemplate, AuthTemplate } from "components";
 import { Route, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 
 import {
@@ -28,7 +28,7 @@ export const router = createBrowserRouter(
           <Route path={ROUTE.SETTINGS} element={<SettingsPage />} />
         </Route>
       </Route>
-      <Route>
+      <Route element={<AuthTemplate />}>
         <Route path={ROUTE.REGISTRATION} element={<RegistrationPage />} />
         <Route path={ROUTE.LOGIN} element={<LoginPage />} />
         <Route path={ROUTE.RESET} element={<ResetPage />} />
