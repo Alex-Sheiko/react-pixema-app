@@ -18,3 +18,4 @@ export * from "./AuthTemplate/AuthTemplate";
 export * from "./Label/Label";
 export * from "./CustomSelect/CustomSelect";
 export * from "./MenuFilter/MenuFilter";
+export * from "./Profile/Profile";
