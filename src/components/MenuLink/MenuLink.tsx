@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { useMatch } from "react-router";
+import { useMatch } from "react-router-dom";
 import { StyledNavLink } from "./styles";
 
 interface MenuLinkProps {

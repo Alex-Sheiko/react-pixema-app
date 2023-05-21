@@ -4,11 +4,11 @@ import { Media } from "ui";
 const SP1 = css`
   margin: 0 0 64px 0;
 
-  ${Media.Md} {
+  ${Media.MD} {
     margin: 0 0 56px 0;
   }
 
-  ${Media.Sm} {
+  ${Media.SM} {
     margin: 0 0 48px 0;
   }
 `;
@@ -16,11 +16,11 @@ const SP1 = css`
 const SP2 = css`
   margin: 0 0 56px 0;
 
-  ${Media.Md} {
+  ${Media.MD} {
     margin: 0 0 48px 0;
   }
 
-  ${Media.Sm} {
+  ${Media.SM} {
     margin: 0 0 40px 0;
   }
 `;
@@ -28,7 +28,7 @@ const SP2 = css`
 const SP3 = css`
   margin: 0 0 48px 0;
 
-  ${Media.Sm} {
+  ${Media.SM} {
     margin: 0 0 40px 0;
   }
 `;
@@ -36,7 +36,7 @@ const SP3 = css`
 const SP4 = css`
   margin: 0 0 40px 0;
 
-  ${Media.Sm} {
+  ${Media.SM} {
     margin: 0 0 32px 0;
   }
 `;
@@ -44,7 +44,7 @@ const SP4 = css`
 const SP5 = css`
   margin: 0 0 32px 0;
 
-  ${Media.Sm} {
+  ${Media.SM} {
     margin: 0 0 24px 0;
   }
 `;
@@ -52,7 +52,7 @@ const SP5 = css`
 const SP6 = css`
   margin: 0 0 24px 0;
 
-  ${Media.Sm} {
+  ${Media.SM} {
     margin: 0 0 20px 0;
   }
 `;
@@ -60,7 +60,7 @@ const SP6 = css`
 const SP7 = css`
   margin: 0 0 24px 0;
 
-  ${Media.Sm} {
+  ${Media.SM} {
     margin: 0 0 20px 0;
   }
 `;

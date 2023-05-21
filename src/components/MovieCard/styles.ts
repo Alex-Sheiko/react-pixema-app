@@ -5,14 +5,14 @@ export const StyledMovieCard = styled.li`
   position: relative;
   max-width: 266px;
   max-height: 433px;
-  ${Media.Lg} {
+  ${Media.LG} {
     max-width: 200px;
     max-height: 379px;
   }
-  ${Media.Md} {
+  ${Media.MD} {
     max-width: 180px;
   }
-  ${Media.Sm} {
+  ${Media.SM} {
     max-width: 272px;
     max-height: 437px;
   }
@@ -23,14 +23,14 @@ export const Poster = styled.img`
   height: 357px;
   border-radius: 20px;
   margin-bottom: 8px;
-  ${Media.Lg} {
+  ${Media.LG} {
     width: 200px;
     height: 279px;
   }
-  ${Media.Md} {
+  ${Media.MD} {
     width: 180px;
   }
-  ${Media.Sm} {
+  ${Media.SM} {
     margin-bottom: 20px;
     width: 272px;
     height: 365px;

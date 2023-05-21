@@ -6,6 +6,7 @@ export const Input = styled.input<{ $error?: boolean }>`
   padding-left: 20px;
   background-color: ${Color.SECONDARY_BG};
   border: 2px solid transparent;
+  outline: none;
   border-radius: 10px;
   color: ${Color.PRIMARY_TEXT};
   border-color: ${({ $error }) => $error && Color.ERROR};
@@ -36,7 +37,7 @@ export const InputGroup = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
-  ${Media.Sm} {
+  ${Media.SM} {
     gap: 20px;
   }
 `;

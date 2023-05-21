@@ -6,3 +6,4 @@ export * from "./input";
 export * from "./typography";
 export * from "./theme";
 export * from "./reset";
+export * from "./pageBlock";

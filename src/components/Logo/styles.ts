@@ -5,7 +5,7 @@ export const StyledLogo = styled.img`
   max-width: 158px;
   width: 100%;
   height: 40px;
-  ${Media.Sm} {
+  ${Media.SM} {
     max-width: 147px;
     height: 38px;
   }

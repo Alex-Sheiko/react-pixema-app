@@ -7,14 +7,14 @@ export const StyledHeader = styled.header`
   grid-template-areas: "search burger";
   gap: 40px;
   align-items: center;
-  ${Media.Lg} {
+  ${Media.LG} {
     grid-template-columns: 1fr 3fr 56px;
     grid-template-areas: "logo search burger";
   }
-  ${Media.Md} {
+  ${Media.MD} {
     grid-template-areas: "logo search burger";
   }
-  ${Media.Sm} {
+  ${Media.SM} {
     grid-template-areas:
       "logo logo burger"
       "search search search";
