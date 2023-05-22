@@ -7,3 +7,4 @@ export * from "./typography";
 export * from "./theme";
 export * from "./reset";
 export * from "./pageBlock";
+export * from "./form";

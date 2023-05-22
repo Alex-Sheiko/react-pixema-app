@@ -1,16 +1,19 @@
-import { store } from "store";
-import { router } from "router";
-import { Provider } from "react-redux";
+import React from "react";
 import { createRoot } from "react-dom/client";
 import { GlobalStyles } from "ui";
-import { RouterProvider } from "react-router-dom";
+import { store } from "store";
+import { Provider } from "react-redux";
+import { App } from "App";
+import { Toast } from "components";
 
 const root = createRoot(document.getElementById("root") as HTMLElement);
+
 root.render(
   <>
     <GlobalStyles />
     <Provider store={store}>
-      <RouterProvider router={router} />
+      <App />
+      <Toast />
     </Provider>
   </>,
 );

@@ -5,6 +5,7 @@ export enum PortalTarget {
   ROOT = "root",
   BURGER_MENU = "menu",
   MODAL = "modal",
+  TOAST = "toast",
 }
 
 interface PortalProps {

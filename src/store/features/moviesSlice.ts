@@ -41,7 +41,7 @@ const moviesSlice = createSlice({
       if (payload) {
         state.isLoading = false;
         state.error = null;
-        state.movies.push(...transformMovies(payload.Search));
+        state.movies = transformMovies(payload.Search);
       }
     });
     builder.addCase(fetchHomeMovies.rejected, (state, { payload }) => {

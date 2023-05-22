@@ -3,7 +3,7 @@ import { RouterLink } from "components";
 import { AnimatePresence } from "framer-motion";
 import { useToggle } from "hooks";
 import { ROUTE } from "router";
-import { useAppDispatch } from "store";
+import { useAppDispatch, userSignOut } from "store";
 import { DropDown, DropDownItem, InnerSignIn, Name, ProfileIcon, StyledProfile } from "./styles";
 
 interface ProfileProps {
@@ -18,6 +18,7 @@ export const Profile = ({ name, email, isAuth }: ProfileProps) => {
   const profileNameWords = name.split(" ");
   const handleName = () => toogleDropDown();
   const handleLogout = () => {
+    dispatch(userSignOut());
     toogleDropDown();
   };
   return (

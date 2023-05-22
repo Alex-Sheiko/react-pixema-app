@@ -62,7 +62,7 @@ export const DetailsPage = () => {
         ) : (
           <Poster src={movie.poster} alt={`poster ${movie.title}`} />
         )}
-        <FavoriteButton onClick={handleFavorite}>
+        <FavoriteButton onClick={handleFavorite} disabled={!isAuth}>
           <BookMarkIcon />
         </FavoriteButton>
       </PosterWrapper>
