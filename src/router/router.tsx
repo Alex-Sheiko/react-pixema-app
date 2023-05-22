@@ -1,5 +1,5 @@
 import { ROUTE } from "router";
-import { MainTemplate, AuthTemplate } from "components";
+import { MainTemplate, AuthTemplate, AuthRequiredTemplate } from "components";
 import { Route, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 
 import {
@@ -23,7 +23,7 @@ export const router = createBrowserRouter(
         <Route path={ROUTE.TRENDS} element={<TrendsPage />} />
         <Route path={ROUTE.MOVIE} element={<DetailsPage />} />
         <Route path={ROUTE.SEARCH} element={<SearchPage />} />
-        <Route>
+        <Route element={<AuthRequiredTemplate />}>
           <Route path={ROUTE.FAVORITES} element={<FavoritesPage />} />
           <Route path={ROUTE.SETTINGS} element={<SettingsPage />} />
         </Route>

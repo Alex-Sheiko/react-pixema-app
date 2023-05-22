@@ -3,6 +3,7 @@ import { generatePath } from "react-router-dom";
 import { StyledMovieCard, Poster, Title, Genres, Rate, FavoriteButton } from "./styles";
 import { RouterLink } from "components";
 import { BookMarkIcon } from "assets";
+import { deleteFavorite, useAppDispatch } from "store";
 
 interface MovieCardProps {
   id: string;
@@ -13,11 +14,15 @@ interface MovieCardProps {
   favorite?: boolean;
 }
 export const MovieCard = ({ id, title, img, genres, rating, favorite }: MovieCardProps) => {
+  const dispatch = useAppDispatch();
+  const handleFavorite = () => {
+    dispatch(deleteFavorite(id));
+  };
   return (
     <StyledMovieCard>
       {rating && <Rate>{rating}</Rate>}
       {favorite && (
-        <FavoriteButton>
+        <FavoriteButton onClick={handleFavorite}>
           <BookMarkIcon />
         </FavoriteButton>
       )}
