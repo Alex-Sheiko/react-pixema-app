@@ -1,7 +1,4 @@
-import { ROUTE } from "router";
 import { MainTemplate, AuthTemplate, AuthRequiredTemplate } from "components";
-import { Route, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
-
 import {
   DetailsPage,
   ErrorPage,
@@ -14,6 +11,8 @@ import {
   SettingsPage,
   TrendsPage,
 } from "pages";
+import { Route, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
+import { ROUTE } from "router";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(

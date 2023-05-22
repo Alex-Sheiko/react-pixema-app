@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { AxiosError } from "axios";
+import { toast } from "react-toastify";
 import { moviesApi, transformMovies } from "services";
 import { Movie, MovieSearchAPI } from "types";
 
@@ -45,6 +46,7 @@ const trendsSlice = createSlice({
       if (payload) {
         state.isLoading = false;
         state.error = payload;
+        toast.error(payload);
       }
     });
   },

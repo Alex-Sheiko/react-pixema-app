@@ -98,7 +98,6 @@ export const Reset = css`
     box-sizing: inherit;
   }
 
-  img,
   object,
   embed {
     max-width: 100%;

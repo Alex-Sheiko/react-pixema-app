@@ -4,13 +4,14 @@ import { Color, Media, Typography } from "ui";
 export const StyledMovieCard = styled.li`
   position: relative;
   max-width: 266px;
+  width: 100%;
   max-height: 433px;
   ${Media.LG} {
-    max-width: 200px;
+    /*max-width: 200px;*/
     max-height: 379px;
   }
   ${Media.MD} {
-    max-width: 180px;
+    /*max-width: 180px;*/
   }
   ${Media.SM} {
     max-width: 272px;
@@ -19,20 +20,16 @@ export const StyledMovieCard = styled.li`
 `;
 
 export const Poster = styled.img`
-  width: 266px;
+  width: 100%;
   height: 357px;
   border-radius: 20px;
   margin-bottom: 8px;
   ${Media.LG} {
-    width: 200px;
     height: 279px;
   }
-  ${Media.MD} {
-    width: 180px;
-  }
+
   ${Media.SM} {
     margin-bottom: 20px;
-    width: 272px;
     height: 365px;
   }
 `;

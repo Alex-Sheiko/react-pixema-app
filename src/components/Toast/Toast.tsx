@@ -8,14 +8,14 @@ export const Toast = () => {
     <Portal target={PortalTarget.TOAST}>
       <ToastContainer
         position="bottom-right"
-        autoClose={2000}
+        autoClose={3000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
         rtl={false}
         pauseOnFocusLoss={false}
         draggable={false}
-        pauseOnHover={false}
+        pauseOnHover={true}
         theme={theme}
       />
     </Portal>

@@ -9,6 +9,7 @@ import {
   getFirebaseErrorMessage,
 } from "services";
 import { FirebaseError } from "firebase/app";
+import { toast } from "react-toastify";
 
 interface FavoritesState {
   favorites: MovieInfo[];
@@ -79,9 +80,11 @@ const favoritesSlice = createSlice({
     });
     builder.addCase(addFavorite.fulfilled, (state, action) => {
       state.isLoading = false;
+      toast.success("Success add to your Favorites");
     });
     builder.addCase(addFavorite.rejected, (state, { payload }) => {
       state.isLoading = false;
+      toast.error(payload);
     });
     builder.addCase(fetchFavorites.pending, (state, action) => {
       state.isLoading = true;
@@ -94,15 +97,18 @@ const favoritesSlice = createSlice({
     });
     builder.addCase(fetchFavorites.rejected, (state, { payload }) => {
       state.isLoading = false;
+      toast.error(payload);
     });
     builder.addCase(deleteFavorite.pending, (state, action) => {
       state.isLoading = true;
     });
     builder.addCase(deleteFavorite.fulfilled, (state, action) => {
       state.isLoading = false;
+      toast.success("Movie delete from favorites");
     });
     builder.addCase(deleteFavorite.rejected, (state, { payload }) => {
       state.isLoading = false;
+      toast.error(payload);
     });
   },
 });

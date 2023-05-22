@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { Media } from "ui";
 
 export const StyledLogo = styled.img`
-  max-width: 158px;
-  width: 100%;
+  width: 158px;
   height: 40px;
   ${Media.SM} {
     max-width: 147px;

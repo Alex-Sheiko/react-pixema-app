@@ -4,8 +4,9 @@ import { ROUTE } from "router";
 import { signUp, useAppDispatch } from "store";
 import { Form, Input, InputGroup } from "ui";
 import { Text } from "./styles";
+import { toast } from "react-toastify";
 
-interface IRegistrationData {
+interface RegistrationData {
   name: string;
   email: string;
   password: string;
@@ -19,8 +20,8 @@ export const RegistrationPage = () => {
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm<IRegistrationData>({ mode: "onSubmit" });
-  const onSubmit: SubmitHandler<IRegistrationData> = ({
+  } = useForm<RegistrationData>({ mode: "onSubmit" });
+  const onSubmit: SubmitHandler<RegistrationData> = ({
     name,
     email,
     password,
@@ -32,8 +33,14 @@ export const RegistrationPage = () => {
         .then((response) => {
           reset();
         });
+    } else {
+      toast.warning("Passwords do not match");
     }
   };
+  if (errors.name)
+    toast.warning(
+      "Fullname is not correct. Please enter correct fullname in format(only Latin words)",
+    );
 
   return (
     <Form

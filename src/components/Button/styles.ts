@@ -8,9 +8,9 @@ interface ButtonProps {
 
 export const StyledButton = styled.button`
   align-self: center;
-  border-radius: 40px;
+  border-radius: 10px;
   border: none;
-  padding: 15px 60px 15px;
+  padding: 15px 50px 15px;
   background-color: ${(props: ButtonProps) =>
     props.$option === "primary" ? Color.PRIMARY : Color.GRAPHITE};
   color: ${Color.WHITE};
