@@ -1,5 +1,5 @@
 import React from "react";
 
-export const ResetPage = () => {
+export const PasswordResetPage = () => {
   return <div>ResetPage</div>;
 };

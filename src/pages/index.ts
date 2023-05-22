@@ -5,7 +5,7 @@ import { HomePage } from "./HomePage/HomePage";
 import { LoginPage } from "./LoginPage/LoginPage";
 
 import { RegistrationPage } from "./RegistrationPage/RegistrationPage";
-import { ResetPage } from "./ResetPage/ResetPage";
+import { PasswordResetPage } from "./PasswordResetPage/PasswordResetPage";
 import { SearchPage } from "./SearchPage/SearchPage";
 import { SettingsPage } from "./SettingsPage/SettingsPage";
 import { TrendsPage } from "./TrendsPage/TrendsPage";
@@ -20,5 +20,5 @@ export {
   SettingsPage,
   RegistrationPage,
   LoginPage,
-  ResetPage,
+  PasswordResetPage,
 };
