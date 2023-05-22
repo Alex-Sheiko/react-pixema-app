@@ -57,7 +57,7 @@ export const DetailsPage = () => {
         {movie.poster === "N/A" ? (
           <Poster
             src={`https://via.placeholder.com/250.png?text=${movie.title}`}
-            alt="fallback image"
+            alt="feedback image"
           />
         ) : (
           <Poster src={movie.poster} alt={`poster ${movie.title}`} />
