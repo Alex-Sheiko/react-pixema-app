@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ButtonOption } from "./Button";
-import { Color, Typography } from "ui";
+import { Color, Media, Typography } from "ui";
 
 interface ButtonProps {
   $option: ButtonOption;
@@ -16,6 +16,9 @@ export const StyledButton = styled.button`
   color: ${Color.WHITE};
   transition: 0.3s all ease-in-out;
   ${Typography.S3};
+  ${Media.SM} {
+    width: 100%;
+  }
 
   &:hover {
     background-color: ${(props: ButtonProps) => props.$option === "primary" && Color.PRIMARY_LIGHT};
