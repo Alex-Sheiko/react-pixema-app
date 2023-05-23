@@ -4,7 +4,7 @@ import { GlobalStyles } from "ui";
 import { store } from "store";
 import { Provider } from "react-redux";
 import "react-toastify/dist/ReactToastify.css";
-import { MovieHub } from "MovieHub";
+import { MovieHub } from "./MovieHub";
 import { Toast } from "components";
 
 const root = createRoot(document.getElementById("root") as HTMLElement);

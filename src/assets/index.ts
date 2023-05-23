@@ -2,6 +2,7 @@ import logoLight from "./images/logo-light.png";
 import logoDark from "./images/logo-dark.png";
 import bgAuth from "./images/background-auth.png";
 import feedback from "./images/feedback.png";
+import error_404 from "./images/error-404.png";
 import { ReactComponent as ArrowRightIcon } from "./icons/arrow-right.svg";
 import { ReactComponent as ArrowLeftIcon } from "./icons/arrow-left.svg";
 import { ReactComponent as ArrowDownIcon } from "./icons/arrow-down.svg";
@@ -19,6 +20,7 @@ import { ReactComponent as LogoutIcon } from "./icons/logout.svg";
 import { ReactComponent as SignInIcon } from "./icons/sign-in.svg";
 
 export {
+  error_404,
   SignInIcon,
   LogoutIcon,
   logoLight,
