@@ -22,3 +22,4 @@ export * from "./Profile/Profile";
 export * from "./Feedback/Feedback";
 export * from "./AuthRequiredTemplate/AuthRequiredTemplate";
 export * from "./Toast/Toast";
+export * from "./ButtonTop/ButtonTop";

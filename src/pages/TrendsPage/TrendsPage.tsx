@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { Button, MovieList } from "components";
+import { Button, ButtonTop, MovieList } from "components";
 import { useAppSelector, useAppDispatch, getTrends, fetchTrends } from "store";
+import { PageBlock } from "ui";
 
 export const TrendsPage = () => {
   const { trends, isLoading, error } = useAppSelector(getTrends);
@@ -12,11 +13,12 @@ export const TrendsPage = () => {
     dispatch(fetchTrends(page));
   }, [dispatch, page]);
   return (
-    <>
+    <PageBlock>
       <MovieList movies={trends} isLoading={isLoading} error={error} />
+      <ButtonTop />
       {!isLoading && !!trends.length && (
         <Button text="Show more" type="button" option="secondary" onClick={handleShowMore} />
       )}
-    </>
+    </PageBlock>
   );
 };

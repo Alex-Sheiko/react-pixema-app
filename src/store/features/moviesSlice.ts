@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { AxiosError } from "axios";
 import { Movie, MovieSearchAPI, RequestOption } from "types";
 import { moviesApi, transformMovies } from "services";
@@ -32,11 +32,7 @@ export const fetchHomeMovies = createAsyncThunk<
 const moviesSlice = createSlice({
   name: "movies",
   initialState,
-  reducers: {
-    addMovie: (state, action: PayloadAction<Movie>) => {
-      state.movies.push(action.payload);
-    },
-  },
+  reducers: {},
   extraReducers(builder) {
     builder.addCase(fetchHomeMovies.pending, (state, action) => {
       state.isLoading = true;
@@ -46,7 +42,10 @@ const moviesSlice = createSlice({
       if (payload) {
         state.isLoading = false;
         state.error = null;
-        state.movies = transformMovies(payload.Search);
+
+        if (payload.Response === "True") {
+          state.movies.push(...transformMovies(payload.Search));
+        }
       }
     });
     builder.addCase(fetchHomeMovies.rejected, (state, { payload }) => {
@@ -59,5 +58,4 @@ const moviesSlice = createSlice({
   },
 });
 
-export const { addMovie } = moviesSlice.actions;
 export default moviesSlice.reducer;

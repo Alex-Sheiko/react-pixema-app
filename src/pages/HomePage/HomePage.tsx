@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, MovieList } from "components";
+import { Button, ButtonTop, MovieList } from "components";
 import { fetchHomeMovies, getMovies, useAppDispatch, useAppSelector } from "store";
 import { PageBlock } from "ui";
 import { RequestOption } from "types";
@@ -22,6 +22,7 @@ export const HomePage = () => {
   return (
     <PageBlock>
       <MovieList movies={movies} isLoading={isLoading} error={error} />
+      <ButtonTop />
       {!isLoading && !!movies.length && (
         <Button text="Show more" type="button" option="secondary" onClick={handleShowMore} />
       )}

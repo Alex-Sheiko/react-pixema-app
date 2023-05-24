@@ -1,10 +1,9 @@
 import { Button, Label, SwitchButton, Title } from "components";
 import { ChangeEvent } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { getTheme, toggleTheme, useAppDispatch, useAppSelector } from "store";
+import { getTheme, toggleTheme, updateUserProfile, useAppDispatch, useAppSelector } from "store";
 import { Input } from "ui";
 import { GroupButton, FormCard, DescSpan, FormSettings } from "./styles";
-import { updateUserProfile } from "../../store/features/userSlice";
 import { toast } from "react-toastify";
 interface SettingsData {
   name: string;
