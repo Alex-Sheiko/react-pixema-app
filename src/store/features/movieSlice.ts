@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { AxiosError } from "axios";
+import { toast } from "react-toastify";
 import { moviesApi, transformMovieInfo } from "services";
 import { MovieInfo, MovieInfoAPI } from "types";
 interface MovieState {
@@ -44,6 +45,7 @@ const movieSlice = createSlice({
       if (payload) {
         state.isLoading = false;
         state.error = payload;
+        toast.error(payload);
       }
     });
   },

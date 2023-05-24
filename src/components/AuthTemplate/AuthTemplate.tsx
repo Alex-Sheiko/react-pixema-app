@@ -1,5 +1,5 @@
 import { StyledAuthTemplate, Content, Copyright } from "./styles";
-import { Navigate, Outlet } from "react-router";
+import { Navigate, Outlet } from "react-router-dom";
 import { Spinner, Logo } from "components";
 import { getUser, useAppSelector } from "store";
 import { ROUTE } from "router";

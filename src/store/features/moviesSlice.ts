@@ -2,6 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { AxiosError } from "axios";
 import { Movie, MovieSearchAPI, RequestOption } from "types";
 import { moviesApi, transformMovies } from "services";
+import { toast } from "react-toastify";
 
 interface MoviesState {
   movies: Movie[];
@@ -41,13 +42,17 @@ const moviesSlice = createSlice({
       if (payload) {
         state.isLoading = false;
         state.error = null;
-        state.movies.push(...transformMovies(payload.Search));
+
+        if (payload.Response === "True") {
+          state.movies.push(...transformMovies(payload.Search));
+        }
       }
     });
     builder.addCase(fetchHomeMovies.rejected, (state, { payload }) => {
       if (payload) {
         state.isLoading = false;
         state.error = payload;
+        toast.error(payload);
       }
     });
   },

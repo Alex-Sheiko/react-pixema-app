@@ -35,6 +35,7 @@ export const Filters = styled(motion.form)`
   padding: 48px 40px;
   ${Media.SM} {
     grid-template-rows: 50px 1fr 120px;
+    border-radius: 0px;
   }
 `;
 

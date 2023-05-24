@@ -1,7 +1,4 @@
-import { ROUTE } from "router";
-import { MainTemplate, AuthTemplate } from "components";
-import { Route, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
-
+import { MainTemplate, AuthTemplate, AuthRequiredTemplate } from "components";
 import {
   DetailsPage,
   ErrorPage,
@@ -9,11 +6,13 @@ import {
   HomePage,
   LoginPage,
   RegistrationPage,
-  ResetPage,
+  PasswordResetPage,
   SearchPage,
   SettingsPage,
   TrendsPage,
 } from "pages";
+import { Route, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
+import { ROUTE } from "router";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,7 +22,7 @@ export const router = createBrowserRouter(
         <Route path={ROUTE.TRENDS} element={<TrendsPage />} />
         <Route path={ROUTE.MOVIE} element={<DetailsPage />} />
         <Route path={ROUTE.SEARCH} element={<SearchPage />} />
-        <Route>
+        <Route element={<AuthRequiredTemplate />}>
           <Route path={ROUTE.FAVORITES} element={<FavoritesPage />} />
           <Route path={ROUTE.SETTINGS} element={<SettingsPage />} />
         </Route>
@@ -31,7 +30,7 @@ export const router = createBrowserRouter(
       <Route element={<AuthTemplate />}>
         <Route path={ROUTE.REGISTRATION} element={<RegistrationPage />} />
         <Route path={ROUTE.LOGIN} element={<LoginPage />} />
-        <Route path={ROUTE.RESET} element={<ResetPage />} />
+        <Route path={ROUTE.RESET_PASSWORD} element={<PasswordResetPage />} />
       </Route>
     </Route>,
   ),

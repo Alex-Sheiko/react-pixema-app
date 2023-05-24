@@ -19,3 +19,7 @@ export * from "./Label/Label";
 export * from "./CustomSelect/CustomSelect";
 export * from "./MenuFilter/MenuFilter";
 export * from "./Profile/Profile";
+export * from "./Feedback/Feedback";
+export * from "./AuthRequiredTemplate/AuthRequiredTemplate";
+export * from "./Toast/Toast";
+export * from "./ButtonTop/ButtonTop";

@@ -1,4 +1,4 @@
-import { Spinner, MovieCard } from "components";
+import { Spinner, MovieCard, Feedback } from "components";
 import { Movie } from "types";
 import { StyledMovieList } from "./styles";
 
@@ -10,7 +10,7 @@ interface MovieListProps {
 export const MovieList = ({ movies, isLoading, error }: MovieListProps) => {
   if (isLoading) return <Spinner />;
   if (movies.length === 0 || error) {
-    return <div>Not found</div>;
+    return <Feedback text="Movies not found" />;
   }
   return (
     <StyledMovieList
