@@ -1,5 +1,5 @@
 export enum ROUTE {
-  HOME = "/",
+  HOME = "/react-pixema-app/",
   TRENDS = "trends",
   FAVORITES = "favorites",
   SETTINGS = "settings",
