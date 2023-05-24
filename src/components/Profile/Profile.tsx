@@ -45,7 +45,7 @@ export const Profile = ({ name, email, isAuth }: ProfileProps) => {
               open: { opacity: 1, height: "auto" },
               collapsed: { opacity: 0, height: 0 },
             }}
-            transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
+            transition={{ ease: [0.04, 0.62, 0.23, 0.98] }}
           >
             <DropDownItem>
               <RouterLink to={ROUTE.SETTINGS}>Edit Profile</RouterLink>
