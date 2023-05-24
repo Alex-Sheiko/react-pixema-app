@@ -40,41 +40,37 @@ Pixema is a web application similar to kinopoisk.ru and okko.tv, providing a vas
 
 ```
 git clone https://github.com/Alex-Sheiko/react-pixema-app.git
-
 ```
 
 2. Navigate to the project directory:
 
 ```
 cd react-pixema-app
-
 ```
 
 3. Install the dependencies:
 
 ```
 npm install
-
 ```
 
 4. Start the development server:
 
 ```
 npm start
-
 ```
 
 5. Open your browser and visit http://localhost:3000 to access Pixema.
 
 ## Additional Information
 
-Pixema is a project that aims to provide an immersive and user-friendly experience for movie and TV show enthusiasts. By leveraging a range of modern technologies, including React, TypeScript, and Redux Toolkit, the application offers seamless navigation, efficient state management, and a visually appealing interface.
+> Pixema is a project that aims to provide an immersive and user-friendly experience for movie and TV show enthusiasts. By leveraging a range of modern technologies, including React, TypeScript, and Redux Toolkit, the application offers seamless navigation, efficient state management, and a visually appealing interface.
 
-Incorporating third-party APIs, such as the OmDb API, allows Pixema to retrieve comprehensive information about movies and series, including ratings, summaries, and release dates. The Firebase Authentication and Firestore services provide secure user authentication and data storage, enabling the implementation of personalized features like favorites and user settings.
+> Incorporating third-party APIs, such as the OmDb API, allows Pixema to retrieve comprehensive information about movies and series, including ratings, summaries, and release dates. The Firebase Authentication and Firestore services provide secure user authentication and data storage, enabling the implementation of personalized features like favorites and user settings.
 
-We welcome contributions from the open source community to enhance Pixema and make it an even more compelling platform for movie and TV show enthusiasts. Feel free to explore the codebase, report issues, and submit pull requests.
+> We welcome contributions from the open source community to enhance Pixema and make it an even more compelling platform for movie and TV show enthusiasts. Feel free to explore the codebase, report issues, and submit pull requests.
 
-Enjoy your movie and TV show exploration with Pixema!
+> Enjoy your movie and TV show exploration with Pixema!
 
 ## Author
 
