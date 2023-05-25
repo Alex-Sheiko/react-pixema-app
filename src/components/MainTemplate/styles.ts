@@ -3,11 +3,13 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const StyledMainTemplate = styled(motion.div)`
-  min-height: 100vh;
-  padding: 40px;
   display: grid;
   grid-template-columns: 160px 1fr;
   gap: 146px;
+  max-width: 1920px;
+  min-height: 100vh;
+  padding: 40px;
+  margin: 0 auto;
 
   ${Media.LG} {
     height: 100%;
