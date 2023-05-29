@@ -19,6 +19,8 @@ import { ReactComponent as ShareIcon } from "./icons/share.svg";
 import { ReactComponent as UserIcon } from "./icons/user.svg";
 import { ReactComponent as LogoutIcon } from "./icons/logout.svg";
 import { ReactComponent as SignInIcon } from "./icons/sign-in.svg";
+import { ReactComponent as ArrowNextIcon } from "./icons/arrow-next.svg";
+import { ReactComponent as ArrowPrevIcon } from "./icons/arrow-prev.svg";
 
 export {
   error_404,
@@ -42,4 +44,6 @@ export {
   ShareIcon,
   UserIcon,
   ArrowDownIcon,
+  ArrowNextIcon,
+  ArrowPrevIcon,
 };
