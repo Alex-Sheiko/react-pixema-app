@@ -4,7 +4,7 @@ import {
   ErrorPage,
   FavoritesPage,
   HomePage,
-  LoginPage,
+  LogInPage,
   RegistrationPage,
   PasswordResetPage,
   SearchPage,
@@ -29,7 +29,7 @@ export const router = createBrowserRouter(
       </Route>
       <Route element={<AuthTemplate />}>
         <Route path={ROUTE.REGISTRATION} element={<RegistrationPage />} />
-        <Route path={ROUTE.LOGIN} element={<LoginPage />} />
+        <Route path={ROUTE.LOGIN} element={<LogInPage />} />
         <Route path={ROUTE.RESET_PASSWORD} element={<PasswordResetPage />} />
       </Route>
     </Route>,

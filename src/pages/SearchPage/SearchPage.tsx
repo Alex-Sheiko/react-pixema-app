@@ -1,4 +1,4 @@
-import { Button, MovieList } from "components";
+import { Button, ButtonTop, MovieList } from "components";
 import { useEffect, useState } from "react";
 import { fetchSearchMovies, getSearchMovies, useAppDispatch, useAppSelector } from "store";
 import { useParams, useSearchParams } from "react-router-dom";
@@ -24,6 +24,7 @@ export const SearchPage = () => {
   return (
     <PageBlock>
       <MovieList movies={movies} isLoading={isLoading} error={error} />
+      <ButtonTop />
       {!error && !isLoading && movies.length >= 9 && (
         <Button text="Show more" type="button" option="secondary" onClick={handleShowMore} />
       )}

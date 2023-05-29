@@ -2,7 +2,7 @@ import { DetailsPage } from "./DetailsPage/DetailsPage";
 import { ErrorPage } from "./ErrorPage/ErrorPage";
 import { FavoritesPage } from "./FavoritesPage/FavoritesPage";
 import { HomePage } from "./HomePage/HomePage";
-import { LoginPage } from "./LoginPage/LoginPage";
+import { LogInPage } from "./LoginPage/LogInPage";
 import { RegistrationPage } from "./RegistrationPage/RegistrationPage";
 import { PasswordResetPage } from "./PasswordResetPage/PasswordResetPage";
 import { SearchPage } from "./SearchPage/SearchPage";
@@ -18,6 +18,6 @@ export {
   SearchPage,
   SettingsPage,
   RegistrationPage,
-  LoginPage,
+  LogInPage,
   PasswordResetPage,
 };

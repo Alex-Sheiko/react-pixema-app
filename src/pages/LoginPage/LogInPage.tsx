@@ -10,7 +10,7 @@ interface LoginData {
   password: string;
 }
 
-export const LoginPage = () => {
+export const LogInPage = () => {
   const dispatch = useAppDispatch();
   const {
     handleSubmit,
