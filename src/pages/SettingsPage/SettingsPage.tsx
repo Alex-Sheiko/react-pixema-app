@@ -67,7 +67,7 @@ export const SettingsPage = () => {
             {...register("passwordNew", { required: true })}
           />
         </Label>
-        <Label text="Confirm Password" style={{ gridColumnStart: "2", gridColumnEnd: "2" }}>
+        <Label text="Confirm Password">
           <Input
             placeholder="Confirm password"
             type="password"

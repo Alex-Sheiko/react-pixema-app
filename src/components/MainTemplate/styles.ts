@@ -13,7 +13,7 @@ export const StyledMainTemplate = styled(motion.div)`
 
   ${Media.LG} {
     height: 100%;
-    padding: 40px 60px;
+    padding: 40px 40px;
     grid-template-columns: 1fr;
   }
 

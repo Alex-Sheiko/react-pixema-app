@@ -19,6 +19,9 @@ export const FormCard = styled.div`
   padding: 40px;
   margin-bottom: 40px;
   background-color: ${Color.BLOCK_BG};
+  ${Media.MD} {
+    padding: 24px;
+  }
   ${Media.SM} {
     gap: 20px;
     padding: 24px;
@@ -44,5 +47,6 @@ export const GroupButton = styled.div`
     display: flex;
     flex-direction: column-reverse;
     justify-self: center;
+    width: 100%;
   }
 `;
